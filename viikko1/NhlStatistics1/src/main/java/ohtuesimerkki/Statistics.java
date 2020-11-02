@@ -14,7 +14,7 @@ public class Statistics {
         players = reader.getPlayers();
     }
 
-    public Player search(String name) {
+    public Player search (String name) {
         for (Player player : players) {
             if (player.getName().contains(name)) {
                 return player;
