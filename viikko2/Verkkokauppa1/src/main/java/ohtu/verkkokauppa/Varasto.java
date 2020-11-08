@@ -3,22 +3,12 @@ package ohtu.verkkokauppa;
 import java.util.*;
 
 public class Varasto implements Varasto_interface {
-
-    private static Varasto instanssi;
-
-    public static Varasto getInstance() {
-        if (instanssi == null) {
-            instanssi = new Varasto();
-        }
-
-        return instanssi;
-    }
     
-    private Kirjanpito kirjanpito;
+    private Kirjanpito_interface kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
-    private Varasto() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Varasto(Kirjanpito_interface kirjanpito) {
+        this.kirjanpito = kirjanpito;
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }

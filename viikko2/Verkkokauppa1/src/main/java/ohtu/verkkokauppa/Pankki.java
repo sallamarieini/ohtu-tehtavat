@@ -2,19 +2,10 @@ package ohtu.verkkokauppa;
 
 public class Pankki implements Pankki_interface {
 
-    private static Pankki instanssi;
+    private Kirjanpito_interface kirjanpito;
 
-    public static Pankki getInstance() {
-        if (instanssi == null) {
-            instanssi = new Pankki();
-        }
-
-        return instanssi;
-    }
-    private Kirjanpito kirjanpito;
-
-    public Pankki() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Pankki(Kirjanpito_interface kirjanpito) {
+        this.kirjanpito = kirjanpito;
     }
 
     public boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa) {
