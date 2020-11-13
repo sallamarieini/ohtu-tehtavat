@@ -1,0 +1,11 @@
+salla;123456789
+testi;testaaja1
+kalle;kalleonparas
+kalle89661;kalleonparas1
+lollol;asdfghjkl
+kalle20044;kalleonparas1
+kalle47239;kalleonparas1
+adminadmin;admin1234
+kalle43448;kalleonparas1
+kalle40320;kalleonparas1
+kalle62588;kalleonparas1
