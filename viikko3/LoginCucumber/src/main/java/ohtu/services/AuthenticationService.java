@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import ohtu.data_access.UserDao;
 
+import static java.lang.Character.isLetter;
+
 public class AuthenticationService {
 
     private UserDao userDao;
@@ -39,7 +41,17 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
-        // validity check of username and password
+        boolean hasOnlyAlphabets = true;
+        char[] chars = password.toCharArray();
+        for (char c : chars) {
+            if (!(isLetter(c))) {
+                hasOnlyAlphabets = false;
+            }
+        }
+
+        if (username.length() < 3 || password.length() < 8 || hasOnlyAlphabets == true) {
+            return true;
+        }
 
         return false;
     }
