@@ -12,3 +12,5 @@
 
 [Viikko 5](/viikko5/)
 * [Viikko 5, retrospektiivit](/retro.md)
+
+[Viikko 6](/viikko6/QueryLanguage/)
