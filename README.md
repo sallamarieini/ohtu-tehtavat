@@ -1,5 +1,7 @@
 # ohtu-tehtavat
 
+Reporistorio tehtävien palautukseen Helsingin yliopiston [Ohjelmistotuotanto](https://ohjelmistotuotanto-hy.github.io/)-kurssilla.
+
 [Viikko 1](/viikko1/)
 * [Viikko 1 toinen repositorio](https://github.com/sallamarieini/ohtu-2020-viikko1)
 
@@ -14,3 +16,8 @@
 * [Viikko 5, retrospektiivit](/retro.md)
 
 [Viikko 6](/viikko6/QueryLanguage/)
+
+[Viikko 7](/viikko7/)
+* [Viikko 7, MERGE.md](/viikko7/MERGE.md)
+
+Kurssiin kuuluva [miniprojekti](https://github.com/korolainenriikka/ohtu_miniprojekti_2020).
